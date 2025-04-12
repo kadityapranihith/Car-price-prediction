@@ -1,36 +1,38 @@
-🚗 Car Price Prediction using Machine Learning
-📌 Overview
-This project builds a Machine Learning model to predict the selling price of used cars based on various features like age, fuel type, transmission, and more. The dataset is sourced from Extensive Used Car Price for Predictive Modeling on Kaggle.
+# 🚗 Car Price Prediction using Machine Learning
 
-📊 Dataset
-Source: Kaggle Dataset
+## 📌 Overview
+This project focuses on building a machine learning model to predict the **selling price of used cars**. The model is trained using features like the car's age, fuel type, transmission type, and ownership history. The dataset used for this project is sourced from Kaggle.
 
-Features:
+---
 
-Present_Price - Current market price of the car
+## 📊 Dataset
+**Source**: [Extensive Used Car Price for Predictive Modeling](https://www.kaggle.com/datasets/brsahan/extensive-used-car-price-for-predictive-modeling)
 
-Year - Manufacturing year of the car
+**Features Used:**
+- `Present_Price`: Current market price of the car (in lakhs)
+- `Year`: Manufacturing year of the car
+- `Fuel_Type`: Type of fuel (Petrol/Diesel/CNG)
+- `Transmission`: Manual or Automatic
+- `Owner`: Number of previous owners
+- `Selling_Price`: Target variable – Price to be predicted
 
-Fuel_Type - Petrol/Diesel/CNG
+---
 
-Transmission - Manual/Automatic
+## 🏗️ Model & Techniques
 
-Owner - Number of previous owners
+### 🔧 Feature Engineering:
+- Handled missing values
+- Encoded categorical variables (`Fuel_Type`, `Transmission`)
+- Removed outliers using **Z-score**
 
-Selling_Price - Target variable (Price to be predicted)
+### 🤖 Machine Learning Model:
+- **Random Forest Regressor**
 
-🏗️ Model & Techniques
-ML Algorithm Used: Random Forest Regressor
+---
 
-Feature Engineering:
+## 📈 Results
+- **Best Model**: Random Forest Regressor  
+- **R² Score**: **0.9626**  
+- The model demonstrates high accuracy in predicting car prices based on the selected features.
 
-Handling missing values
-
-Encoding categorical variables
-
-Removing outliers using Z-score
-
-📈 Results
-Best Model: Random Forest Regressor
-
-R² Score: 0.9626
+---
